@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FAQ</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="loginsheet" href="login.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style type="text/css">
+      body{
+        background:url(2.jpg);
+        padding-top: 20px;
+        font-family: monospace;
+      }
+      ul{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'inter';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: white;
+}
+
+      .header{
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px 0px;
+        background: transparent;
+        color: black;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .faq-item{
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+      .faq-body{
+        display: none;
+        margin-top: 30px;
+      }
+      .faq-wrapper{
+        width: 75%;
+        margin: auto;
+      }
+      .faq-inner{
+        padding: 30px;
+        background: transparent;
+      }
+      .faq-plus{
+        float: right;
+        font-size: 1.4em;
+        line-height: 1em;
+        cursor: pointer;
+      }
+      hr{
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="http://127.0.0.1:5500/faq.html">FAQ</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="http://127.0.0.1:5500/login.html">SIGN UP</a></li>
+        </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="header">
+            <h1>FAQs</h1>
+          </div>
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h3>
+                Who can use this app?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Anyone planning to travel alone by a public transport(buses or trains) can use this app.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                Why use Travel Connect?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                If you are someone who hates travelling alone,Travel Connect is for you! It connects you with a 
+                travel companion for your whole journey.It also includes many other cool features.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                Is Travel Connect free?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Ofcourse,it is! Keeping you safe and happy is our priority.Travel Connect is completely free with
+                absolutely no in-app experience.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(".faq-plus").on('click',function(){
+        $(this).parent().parent().find('.faq-body').slideToggle();
+      });
+    </script>
+  </body>
+
+</html>
